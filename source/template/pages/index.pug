@@ -1,0 +1,16 @@
+extends ../_template.pug
+
+append variables
+  - var dev = false;
+  - var title = 'Home page';
+  - var pageClass = 'home';
+
+
+
+block content
+  header#header.header
+  .uk-card.uk-card-default.uk-card-body.sid-card
+    .uk-card-title.sid-card-title title
+    
+    
+  include ../includes/scroll-to-top.pug

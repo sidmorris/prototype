@@ -1,0 +1,14 @@
+@import "dependensis.scss";
+
+//
+// RESET
+//
+*:focus{
+  outline: none;
+}
+.sid-card{
+  @extend .uk-card;  
+  @extend .uk-card-default;  
+}
+
+@import "common/**/*.scss";

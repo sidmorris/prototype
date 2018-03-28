@@ -1,0 +1,4 @@
+@import "mixins";
+
+@include font-face("roboto-ex", "../fonts/RobotoRegular/RobotoRegular", 400);
+@include font-face("roboto-ex", "../fonts/RobotoBold/RobotoBold", 600);
