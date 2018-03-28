@@ -1,8 +1,5 @@
 @import "vars.scss";
-@import "../../node_modules/uikit/src/scss/variables-theme.scss";
-@import "../../node_modules/uikit/src/scss/mixins-theme.scss";
-@import "mixins.scss";
-// @import "../libs/bootstrap/scss/bootstrap-grid.scss";
-@import "../../node_modules/uikit/src/scss/uikit-theme.scss";
 @import "sprite.scss";
-
+@import "settings-overade.scss";
+@import 'foundation';
+@import 'foundation-everything';

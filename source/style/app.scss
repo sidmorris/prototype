@@ -6,9 +6,5 @@
 *:focus{
   outline: none;
 }
-.sid-card{
-  @extend .uk-card;  
-  @extend .uk-card-default;  
-}
 
 @import "common/**/*.scss";

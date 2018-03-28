@@ -22,7 +22,7 @@ $.gulp.task('default', $.gulp.series(
   $.gulp.parallel(
     'pug',
     'sass',
-    'css:foundation',
+    // 'css:foundation',
     'js:foundation',
     'js:app',
     'copy:image',
