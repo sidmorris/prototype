@@ -1,4 +1,5 @@
 module.exports = [
-  new RegExp('.*\.-open.*'),// example regexpreshions
-  ".show" //example class
+  new RegExp('.*\.-open.*'),//  regexpreshions
+  new RegExp('^\.is-.*'),
+  ".foundation-mq" // class
 ]

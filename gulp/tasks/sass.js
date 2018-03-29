@@ -18,8 +18,20 @@ module.exports = function () {
           'Opera 12.1'
         ]
       }))
-      .pipe($.gp.csso())
-      .pipe($.gp.sourcemaps.write())
+      .pipe($.gp.if(CONST.PRODUCTION,
+        $.gp.uncss({
+          html: [$.PATH.ROOT + '/**/*.html'],
+          ignore: $.cssIgnore
+        })))
+      .pipe($.gp.if(CONST.PRODUCTION, $.gp.csso({
+        restructure: false,
+        sourceMap: false,
+        forceMediaMerge: true,
+        clone: false,
+        comments: false, 
+        debug: false
+    })))
+      .pipe($.gp.if(!CONST.PRODUCTION, $.gp.sourcemaps.write()))
       .pipe($.gulp.dest($.PATH.ROOT + '/assets/css'))
       .pipe($.browserSync.stream());
   });
