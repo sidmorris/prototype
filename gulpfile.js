@@ -7,11 +7,15 @@ global.$ = {
   del: require('del'),
   browserSync: require('browser-sync').create(),
   gp: require('gulp-load-plugins')(),
+  yargs : require('yargs'),
   PATH: require('./gulp/config/path.js'),
-  cssIgnore: require('./gulp/config/css-ignore.js')
+  cssIgnore: require('./gulp/config/css-ignore.js'),
 };
 //
 // CONFIG
+//
+const PRODUCTION = !!($.yargs.argv.production);
+//
 //
 $.PATH.TASKS.forEach(function(taskPath) {
   require(taskPath)();
