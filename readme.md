@@ -1,3 +1,6 @@
-# sid-start-2018-pug-metall
+# sid-start-2018
 ---
-**with ui-kit**
+### with zurb foundation
+- **npm i**  - *install packages*
+- **gulp**  - *run deweloper mode*
+- **gulp --prod**  - *run production mode*

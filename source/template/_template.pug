@@ -14,8 +14,7 @@ block bemtoUikitSetings
     })
 
 block variables
-  - var pageClass = 'default';
-  - var dev = false;
+  -var pageClass = 'default';
 
 doctype html
 html
@@ -30,12 +29,9 @@ html
 
     //- favicon block start
     //- favicon block end
-
-    link(rel='stylesheet' href='/assets/css/foundation.css')
-    if dev
-      link(rel='stylesheet' href='/assets/css/app.min.css')
-    else
-      link(rel='stylesheet' href='/assets/css/app.css')
+    //- uncoment belou if use foundation.css, here and gulpfile.js.
+    //- link(rel='stylesheet' href='/assets/css/foundation.css')
+    link(rel='stylesheet' href='/assets/css/app.css')
     script(src='/assets/js/foundation.js' defer)
     script(src='/assets/js/app.js' defer)
 
