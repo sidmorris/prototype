@@ -3,8 +3,11 @@
   width: 100%;
   min-height: 500px;
   max-height: 800px;
-  background-color: $color-accent-1;
-  &::before{
+  background-color: $color-accent-2;
+  
+}
+.header__owerlay{
+	&:after{
     content: '';
     position: absolute;
     width: 100%;
