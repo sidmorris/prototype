@@ -1,4 +1,4 @@
-let uglify = require('gulp-uglify-es').default;
+var uglify = require('gulp-uglify-es').default;
 
 
 module.exports = function(){
@@ -10,7 +10,7 @@ module.exports = function(){
 // });
 
 $.gulp.task('js:foundation', function () {
-  return $.gulp.src($.PATH.JS_FOUNDATION)
+  return $.gulp.src($.PATH.JS)
     .pipe($.gp.concat('foundation.js'))
     .pipe(uglify())
     .pipe($.gulp.dest($.PATH.ROOT + '/assets/js'))

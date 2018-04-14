@@ -1,10 +1,12 @@
 module.exports = function () {
+	let configSass = $.PATH.SASS.UIKIT;
+
   $.gulp.task('sass', function () {
     return $.gulp.src('source/style/app.scss')
       .pipe($.gp.sassGlob())
       .pipe($.gp.sourcemaps.init())
       .pipe($.gp.sass({
-        includePaths: $.PATH.SASS
+        includePaths: configSass
       }))
       .on('error', $.gp.notify.onError({
         title: 'Style'
