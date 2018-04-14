@@ -23,7 +23,7 @@ module.exports = {
 	TASKS: [
 		'./gulp/tasks/foundation.js',
 		'./gulp/tasks/js_app.js',
-		'./gulp/tasks/svg.js',
+		// './gulp/tasks/svg.js',
 		'./gulp/tasks/copy.js',
 		'./gulp/tasks/clear.js',
 		'./gulp/tasks/sass.js',

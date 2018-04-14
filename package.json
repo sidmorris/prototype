@@ -27,7 +27,6 @@
 		"gulp-svgmin": "~1.2.2",
 		"gulp-uglify-es": "^1.0.1",
 		"gulp-uncss": "^1.0.6",
-		"pug-lint": "^2.5.0",
 		"yargs": "^11.0.0"
 	},
 	"dependencies": {
@@ -36,8 +35,5 @@
 		"jquery": "~3.3.1",
 		"motion-ui": "^1.2.3",
 		"uikit": "^3.0.0-beta.42"
-	},
-	"pugLintConfig": {
-		"disallowHtmlText": true
 	}
 }
